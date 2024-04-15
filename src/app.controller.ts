@@ -10,6 +10,6 @@ export class AppController {
   async getHello(): Promise<string> {
     const resultA = await this.clientA.send('getHello', '').toPromise();
     const resultB = await this.clientB.send('getHello', '').toPromise();
-    return this.appService.getHello(resultA, resultB);
+    return this.appService.getHello(resultA , resultB);
   }
 }
